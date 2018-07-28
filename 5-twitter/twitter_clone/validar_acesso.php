@@ -19,7 +19,7 @@ echo 'xupis';
 
 require_once('db.class.php');
 $user = $_POST['usuario'];
-$pass = $_POST['senha'];
+$pass = md5($_POST['senha']);
 
 $user."<br/>";
 $pass."<br/>";

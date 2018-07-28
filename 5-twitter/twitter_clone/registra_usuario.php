@@ -16,7 +16,7 @@ require_once('db.class.php');
 
  $user = $_POST['usuario'];
  $email = $_POST['email'];
- $senha = $_POST['senha'];
+ $senha = md5($_POST['senha']);
 
 
 $objDB = new db();
@@ -26,12 +26,6 @@ $link = $objDB->conecta_mysql();
 $sql = "insert into  usuarios(usuario, email, senha) values ('$user','$email','$senha')";
 
 $resultado = '';  
-
-echo 'teste';
-echo 'git';
-
-
-
 
 if( $resultado = mysqli_query($link, $sql)){
 
