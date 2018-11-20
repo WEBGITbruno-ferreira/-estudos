@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-			<!-- jquery - link cdn -->
+			<!-- jquery - link cdn------- -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 		<!-- bootstrap - link cdn -->
